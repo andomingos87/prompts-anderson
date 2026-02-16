@@ -1,7 +1,9 @@
 ---
 status: unfilled
-generated: 2026-01-27
+generated: "{{DATE}}"
 agents:
+  # Selecione apenas os agents relevantes para este plano.
+  # Remova os que nao se aplicam.
   - type: "code-reviewer"
     role: "Review code changes for quality, style, and best practices"
   - type: "bug-fixer"
@@ -31,6 +33,8 @@ agents:
   - type: "mobile-specialist"
     role: "Develop native and cross-platform mobile applications"
 docs:
+  # Liste os documentos de contexto que este plano referencia.
+  # Ajuste conforme a estrutura do seu projeto.
   - "project-overview.md"
   - "architecture.md"
   - "development-workflow.md"
@@ -51,51 +55,59 @@ phases:
     prevc: "V"
 ---
 
-# Cusersasdomonedrivearea De Trabalhoprojectsgaragei Plan
-
-> C:\Users\asdom\OneDrive\Área de Trabalho\projects\garageinn\.context\plans\ti-ticket-open-access.md
-
 ## Task Snapshot
-- **Primary goal:** TODO: Describe the outcome to achieve.
-- **Success signal:** TODO: Define how the team will know the plan worked.
+- **Primary goal:** {{TODO: Descreva o resultado esperado deste plano.}}
+- **Success signal:** {{TODO: Defina como a equipe sabera que o plano foi bem-sucedido.}}
 - **Key references:**
   - [Documentation Index](../docs/README.md)
   - [Agent Handbook](../agents/README.md)
   - [Plans Index](./README.md)
 
 ## Codebase Context
-- **Total files analyzed:** 583
-- **Total symbols discovered:** 2147
-- **Architecture layers:** Config, Utils, Components, Repositories, Services, Controllers
-- **Entry points:** apps\mobile\index.ts, supabase\functions\invite-user\index.ts, supabase\functions\impersonate-user\index.ts (+58 more)
+
+> Preencha esta secao com dados reais do projeto. Use ferramentas de analise
+> estatica ou explore o repositorio para coletar as metricas abaixo.
+
+- **Total files analyzed:** {{TODO: numero de arquivos}}
+- **Total symbols discovered:** {{TODO: numero de simbolos exportados}}
+- **Architecture layers:** {{TODO: ex. Config, Utils, Components, Services, Controllers}}
+- **Entry points:** {{TODO: ex. src/index.ts, src/main.tsx}}
 
 ### Key Components
 
 **Key Interfaces:**
-- `AsyncState` — C:\Users\asdom\OneDrive\Área de Trabalho\projects\garageinn\apps\mobile\src\types\index.ts:11
-- `User` — C:\Users\asdom\OneDrive\Área de Trabalho\projects\garageinn\apps\mobile\src\types\index.ts:31
-- `UserUnit` — C:\Users\asdom\OneDrive\Área de Trabalho\projects\garageinn\apps\web\src\lib\units\index.ts:9
-- `UserRoleInfo` — C:\Users\asdom\OneDrive\Área de Trabalho\projects\garageinn\apps\web\src\lib\supabase\custom-types.ts:15
-- `UserUnitInfo` — C:\Users\asdom\OneDrive\Área de Trabalho\projects\garageinn\apps\web\src\lib\supabase\custom-types.ts:24
+<!-- Liste as interfaces/tipos centrais do dominio com caminhos relativos ao root do projeto. -->
+- `{{InterfaceName}}` — `{{caminho/relativo/ao/arquivo.ts:linha}}`
+
+**Key Services / Modules:**
+<!-- Liste os servicos ou modulos principais. -->
+- `{{ServiceName}}` — `{{caminho/relativo/ao/arquivo.ts:linha}}`
+
 ## Agent Lineup
+
+> Mantenha apenas os agents necessarios para este plano. Remova linhas nao utilizadas.
+
 | Agent | Role in this plan | Playbook | First responsibility focus |
 | --- | --- | --- | --- |
-| Code Reviewer | TODO: Describe why this agent is involved. | [Code Reviewer](../agents/code-reviewer.md) | Review code changes for quality, style, and best practices |
-| Bug Fixer | TODO: Describe why this agent is involved. | [Bug Fixer](../agents/bug-fixer.md) | Analyze bug reports and error messages |
-| Feature Developer | TODO: Describe why this agent is involved. | [Feature Developer](../agents/feature-developer.md) | Implement new features according to specifications |
-| Refactoring Specialist | TODO: Describe why this agent is involved. | [Refactoring Specialist](../agents/refactoring-specialist.md) | Identify code smells and improvement opportunities |
-| Test Writer | TODO: Describe why this agent is involved. | [Test Writer](../agents/test-writer.md) | Write comprehensive unit and integration tests |
-| Documentation Writer | TODO: Describe why this agent is involved. | [Documentation Writer](../agents/documentation-writer.md) | Create clear, comprehensive documentation |
-| Performance Optimizer | TODO: Describe why this agent is involved. | [Performance Optimizer](../agents/performance-optimizer.md) | Identify performance bottlenecks |
-| Security Auditor | TODO: Describe why this agent is involved. | [Security Auditor](../agents/security-auditor.md) | Identify security vulnerabilities |
-| Backend Specialist | TODO: Describe why this agent is involved. | [Backend Specialist](../agents/backend-specialist.md) | Design and implement server-side architecture |
-| Frontend Specialist | TODO: Describe why this agent is involved. | [Frontend Specialist](../agents/frontend-specialist.md) | Design and implement user interfaces |
-| Architect Specialist | TODO: Describe why this agent is involved. | [Architect Specialist](../agents/architect-specialist.md) | Design overall system architecture and patterns |
-| Devops Specialist | TODO: Describe why this agent is involved. | [Devops Specialist](../agents/devops-specialist.md) | Design and maintain CI/CD pipelines |
-| Database Specialist | TODO: Describe why this agent is involved. | [Database Specialist](../agents/database-specialist.md) | Design and optimize database schemas |
-| Mobile Specialist | TODO: Describe why this agent is involved. | [Mobile Specialist](../agents/mobile-specialist.md) | Develop native and cross-platform mobile applications |
+| Code Reviewer | {{TODO: Por que este agent participa.}} | [Code Reviewer](../agents/code-reviewer.md) | Review code changes for quality, style, and best practices |
+| Bug Fixer | {{TODO: Por que este agent participa.}} | [Bug Fixer](../agents/bug-fixer.md) | Analyze bug reports and error messages |
+| Feature Developer | {{TODO: Por que este agent participa.}} | [Feature Developer](../agents/feature-developer.md) | Implement new features according to specifications |
+| Refactoring Specialist | {{TODO: Por que este agent participa.}} | [Refactoring Specialist](../agents/refactoring-specialist.md) | Identify code smells and improvement opportunities |
+| Test Writer | {{TODO: Por que este agent participa.}} | [Test Writer](../agents/test-writer.md) | Write comprehensive unit and integration tests |
+| Documentation Writer | {{TODO: Por que este agent participa.}} | [Documentation Writer](../agents/documentation-writer.md) | Create clear, comprehensive documentation |
+| Performance Optimizer | {{TODO: Por que este agent participa.}} | [Performance Optimizer](../agents/performance-optimizer.md) | Identify performance bottlenecks |
+| Security Auditor | {{TODO: Por que este agent participa.}} | [Security Auditor](../agents/security-auditor.md) | Identify security vulnerabilities |
+| Backend Specialist | {{TODO: Por que este agent participa.}} | [Backend Specialist](../agents/backend-specialist.md) | Design and implement server-side architecture |
+| Frontend Specialist | {{TODO: Por que este agent participa.}} | [Frontend Specialist](../agents/frontend-specialist.md) | Design and implement user interfaces |
+| Architect Specialist | {{TODO: Por que este agent participa.}} | [Architect Specialist](../agents/architect-specialist.md) | Design overall system architecture and patterns |
+| Devops Specialist | {{TODO: Por que este agent participa.}} | [Devops Specialist](../agents/devops-specialist.md) | Design and maintain CI/CD pipelines |
+| Database Specialist | {{TODO: Por que este agent participa.}} | [Database Specialist](../agents/database-specialist.md) | Design and optimize database schemas |
+| Mobile Specialist | {{TODO: Por que este agent participa.}} | [Mobile Specialist](../agents/mobile-specialist.md) | Develop native and cross-platform mobile applications |
 
 ## Documentation Touchpoints
+
+> Ajuste os caminhos relativos conforme a estrutura `.context/docs/` do seu projeto.
+
 | Guide | File | Primary Inputs |
 | --- | --- | --- |
 | Project Overview | [project-overview.md](../docs/project-overview.md) | Roadmap, README, stakeholder notes |
@@ -108,100 +120,116 @@ phases:
 | Tooling & Productivity Guide | [tooling.md](../docs/tooling.md) | CLI scripts, IDE configs, automation workflows |
 
 ## Risk Assessment
-Identify potential blockers, dependencies, and mitigation strategies before beginning work.
+
+> Identifique bloqueios potenciais, dependencias e estrategias de mitigacao antes de iniciar.
 
 ### Identified Risks
 | Risk | Probability | Impact | Mitigation Strategy | Owner |
 | --- | --- | --- | --- | --- |
-| TODO: Dependency on external team | Medium | High | Early coordination meeting, clear requirements | TODO: Name |
-| TODO: Insufficient test coverage | Low | Medium | Allocate time for test writing in Phase 2 | TODO: Name |
+| {{TODO: Descreva o risco}} | Low / Medium / High | Low / Medium / High | {{TODO: Estrategia de mitigacao}} | {{TODO: Responsavel}} |
 
 ### Dependencies
-- **Internal:** TODO: List dependencies on other teams, services, or infrastructure
-- **External:** TODO: List dependencies on third-party services, vendors, or partners
-- **Technical:** TODO: List technical prerequisites or required upgrades
+- **Internal:** {{TODO: Dependencias de outras equipes, servicos ou infraestrutura interna}}
+- **External:** {{TODO: Dependencias de servicos terceiros, vendors ou parceiros}}
+- **Technical:** {{TODO: Pre-requisitos tecnicos ou upgrades necessarios}}
 
 ### Assumptions
-- TODO: Document key assumptions being made (e.g., "Assume current API schema remains stable")
-- TODO: Note what happens if assumptions prove false
+- {{TODO: Documente premissas-chave (ex. "API schema atual permanece estavel")}}
+- {{TODO: Descreva o que acontece se a premissa for invalidada}}
 
 ## Resource Estimation
 
 ### Time Allocation
 | Phase | Estimated Effort | Calendar Time | Team Size |
 | --- | --- | --- | --- |
-| Phase 1 - Discovery | TODO: e.g., 2 person-days | 3-5 days | 1-2 people |
-| Phase 2 - Implementation | TODO: e.g., 5 person-days | 1-2 weeks | 2-3 people |
-| Phase 3 - Validation | TODO: e.g., 2 person-days | 3-5 days | 1-2 people |
-| **Total** | **TODO: total** | **TODO: total** | **-** |
+| Phase 1 - Discovery | {{TODO: ex. 2 person-days}} | {{TODO: ex. 3-5 days}} | {{TODO: ex. 1-2 people}} |
+| Phase 2 - Implementation | {{TODO: ex. 5 person-days}} | {{TODO: ex. 1-2 weeks}} | {{TODO: ex. 2-3 people}} |
+| Phase 3 - Validation | {{TODO: ex. 2 person-days}} | {{TODO: ex. 3-5 days}} | {{TODO: ex. 1-2 people}} |
+| **Total** | **{{TODO: total}}** | **{{TODO: total}}** | **-** |
 
 ### Required Skills
-- TODO: List required expertise (e.g., "React experience", "Database optimization", "Infrastructure knowledge")
-- TODO: Identify skill gaps and training needs
+- {{TODO: Liste expertise necessaria (ex. "React", "Database optimization", "Infrastructure")}}
+- {{TODO: Identifique gaps de conhecimento e necessidades de treinamento}}
 
 ### Resource Availability
-- **Available:** TODO: List team members and their availability
-- **Blocked:** TODO: Note any team members with conflicting priorities
-- **Escalation:** TODO: Name of person to contact if resources are insufficient
+- **Available:** {{TODO: Membros da equipe e disponibilidade}}
+- **Blocked:** {{TODO: Membros com prioridades conflitantes}}
+- **Escalation:** {{TODO: Contato para escalar se recursos forem insuficientes}}
 
 ## Working Phases
+
 ### Phase 1 — Discovery & Alignment
+
 **Steps**
-1. TODO: Outline discovery tasks and assign the accountable owner.
-2. TODO: Capture open questions that require clarification.
+1. {{TODO: Descreva tarefas de discovery e atribua o responsavel.}}
+2. {{TODO: Capture perguntas abertas que precisam de esclarecimento.}}
 
 **Commit Checkpoint**
-- After completing this phase, capture the agreed context and create a commit (for example, `git commit -m "chore(plan): complete phase 1 discovery"`).
+- Ao concluir esta fase, capture o contexto acordado e crie um commit:
+  `git commit -m "chore(plan): complete phase 1 discovery"`
 
 ### Phase 2 — Implementation & Iteration
+
 **Steps**
-1. TODO: Note build tasks, pairing expectations, and review cadence.
-2. TODO: Reference docs or playbooks to keep changes aligned.
+1. {{TODO: Descreva tarefas de build, expectativas de pairing e cadencia de review.}}
+2. {{TODO: Referencie docs ou playbooks para manter mudancas alinhadas.}}
 
 **Commit Checkpoint**
-- Summarize progress, update cross-links, and create a commit documenting the outcomes of this phase (for example, `git commit -m "chore(plan): complete phase 2 implementation"`).
+- Sumarize progresso, atualize cross-links e crie um commit:
+  `git commit -m "chore(plan): complete phase 2 implementation"`
 
 ### Phase 3 — Validation & Handoff
+
 **Steps**
-1. TODO: Detail testing, verification, and documentation updates.
-2. TODO: Document evidence the team must capture for maintainers.
+1. {{TODO: Detalhe testes, verificacao e atualizacoes de documentacao.}}
+2. {{TODO: Documente evidencias que a equipe deve capturar para mantenedores.}}
 
 **Commit Checkpoint**
-- Record the validation evidence and create a commit signalling the handoff completion (for example, `git commit -m "chore(plan): complete phase 3 validation"`).
+- Registre evidencias de validacao e crie um commit:
+  `git commit -m "chore(plan): complete phase 3 validation"`
 
 ## Rollback Plan
-Document how to revert changes if issues arise during or after implementation.
+
+> Documente como reverter mudancas caso problemas surjam durante ou apos a implementacao.
 
 ### Rollback Triggers
-When to initiate rollback:
-- Critical bugs affecting core functionality
-- Performance degradation beyond acceptable thresholds
-- Data integrity issues detected
-- Security vulnerabilities introduced
-- User-facing errors exceeding alert thresholds
+Quando iniciar rollback:
+- Critical bugs afetando funcionalidade core
+- Degradacao de performance alem dos limites aceitaveis
+- Problemas de integridade de dados detectados
+- Vulnerabilidades de seguranca introduzidas
+- Erros user-facing excedendo limites de alerta
 
 ### Rollback Procedures
+
 #### Phase 1 Rollback
-- Action: Discard discovery branch, restore previous documentation state
-- Data Impact: None (no production changes)
-- Estimated Time: < 1 hour
+- **Action:** Descartar branch de discovery, restaurar estado anterior da documentacao
+- **Data Impact:** Nenhum (sem mudancas em producao)
+- **Estimated Time:** < 1 hora
 
 #### Phase 2 Rollback
-- Action: TODO: Revert commits, restore database to pre-migration snapshot
-- Data Impact: TODO: Describe any data loss or consistency concerns
-- Estimated Time: TODO: e.g., 2-4 hours
+- **Action:** {{TODO: Reverter commits, restaurar banco para snapshot pre-migracao}}
+- **Data Impact:** {{TODO: Descreva perda de dados ou preocupacoes de consistencia}}
+- **Estimated Time:** {{TODO: ex. 2-4 horas}}
 
 #### Phase 3 Rollback
-- Action: TODO: Full deployment rollback, restore previous version
-- Data Impact: TODO: Document data synchronization requirements
-- Estimated Time: TODO: e.g., 1-2 hours
+- **Action:** {{TODO: Rollback completo de deploy, restaurar versao anterior}}
+- **Data Impact:** {{TODO: Documente requisitos de sincronizacao de dados}}
+- **Estimated Time:** {{TODO: ex. 1-2 horas}}
 
 ### Post-Rollback Actions
-1. Document reason for rollback in incident report
-2. Notify stakeholders of rollback and impact
-3. Schedule post-mortem to analyze failure
-4. Update plan with lessons learned before retry
+1. Documentar razao do rollback em incident report
+2. Notificar stakeholders sobre rollback e impacto
+3. Agendar post-mortem para analisar a falha
+4. Atualizar plano com licoes aprendidas antes de nova tentativa
 
 ## Evidence & Follow-up
 
-List artifacts to collect (logs, PR links, test runs, design notes). Record follow-up actions or owners.
+> Liste artefatos a coletar (logs, PR links, test runs, design notes).
+> Registre acoes de follow-up e responsaveis.
+
+| Artifact | Type | Link / Location | Owner |
+| --- | --- | --- | --- |
+| {{TODO: ex. PR de implementacao}} | Pull Request | {{TODO: link}} | {{TODO: responsavel}} |
+| {{TODO: ex. Resultado de testes}} | Test Report | {{TODO: link}} | {{TODO: responsavel}} |
+| {{TODO: ex. Notas de design}} | Document | {{TODO: link}} | {{TODO: responsavel}} |
